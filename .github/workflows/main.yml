@@ -4,7 +4,7 @@ name: news-bot
 # 発火タイミング
 on:
   schedule:
-    - cron: '19 9 * * *'
+    - cron: '20 9 * * *'
 
 jobs:
   build:
