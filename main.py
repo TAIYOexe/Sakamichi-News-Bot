@@ -1,5 +1,3 @@
-from email import message
-from pyexpat.errors import messages
 import requests
 from bs4 import BeautifulSoup
 import os
