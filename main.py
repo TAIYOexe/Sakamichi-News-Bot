@@ -37,8 +37,7 @@ def sakura_news():
         type = item.find('p', attrs={'class': 'type'}).text
         date = item.find('p', attrs={'class': 'date wf-a'}).text
         lead = item.find('p', attrs={'class': 'lead'}).text
-        link = item.find('a')
-        url = link['href']
+        url = item.find('a')['href']
 
         message = type + '\n' + date + '\n' + lead + '\n' + root + url
         messages.append(message)
